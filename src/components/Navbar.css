@@ -1,0 +1,276 @@
+.navbar {
+    background-color:  #040B0F;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem;
+}
+
+.navbar-logo img {
+    width: 18rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+.navbar-logo a {
+    font-size: 2rem;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu i,
+.nav-menu a {
+    color: #FFD369;
+}
+
+.nav-item {
+    padding: 1.2rem 3.4rem;
+}
+
+.nav-item i {
+    font-size: 2.5rem;
+    margin-right: .7rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NAVBAR FORM */
+
+.navbar-form {
+    position: relative;
+    margin-left: 2rem;
+}
+
+.navbar-form i {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1rem;
+    font-size: 1.6rem;
+    color: #FFD369;
+}
+
+.navbar-form input{
+    padding: 1rem 3.2rem;
+    font-size: 1.6rem;
+    border-radius: 10rem;
+    background-color: #050E14;
+    color: #FFD369;
+    border: none;
+}
+
+.navbar-form input:focus {
+    outline: 2px solid #FFD369; 
+}
+
+/* Film Bölümü Stilleri */
+
+#navbar-movie {
+    background-color: #FFD369;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#navbar-movie ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar-movie li {
+    padding: 1.4rem 3rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#navbar-movie li a{
+    color: #040B0F;
+}
+
+#navbar-movie .ranking-li {
+    position: relative;
+}
+
+#navbar-movie .ranking-li i{
+    font-size: 1.6rem;
+    position: absolute;
+    bottom: 1.9rem;
+    right: 1.5rem;
+}
+
+/* Ana Menü */
+.ranking-li {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+}
+
+.ranking-li > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #040B0F;
+}
+
+.ranking-li i {
+    margin-left: 5px;
+}
+
+/* Alt Menü */
+#navbar-movie .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 1rem;
+    z-index: 1;
+    background-color: #FFD369;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#navbar-movie .dropdown li {
+    padding: 0;
+    text-align: center;
+    border: .1rem solid #FFD369
+}
+
+.dropdown li a {
+    color: #040B0F;
+    text-decoration: none;
+    display: block;
+    padding: 1.4rem 5rem;
+}
+
+#navbar-movie .dropdown li a:hover {
+    background-color: #040B0F;
+    color: #FFD369;
+}
+
+
+#navbar-movie .ranking-li:hover .dropdown {
+    display: block ;
+}
+
+
+.footer-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-mobile form input:focus::placeholder {
+    opacity: 0;
+}
+
+.navbar-header {
+    display: none;
+}
+
+
+@media (max-width: 1199px) {
+    .nav-item {
+        padding: 1.2rem 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    #navbar-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        position: relative;
+    }
+
+    #navbar-container .navbar-list {
+        display: block;
+        width: 100%;
+    }
+
+    #navbar-container .navbar-list .navbar-header {
+        position: absolute;
+        color: #fff;
+        top: 5rem;
+        right: 5rem;
+    }
+
+    .navbar-header i {
+        font-size: 4rem;
+        color: #FFD369;
+    }
+
+    .footer-mobile {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .footer-mobile.active {
+        display: flex;
+    }
+
+    .footer-mobile .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        order: 2;
+    }
+
+    .footer-mobile .nav-menu li {
+        margin-bottom: 1rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+    }
+
+    .footer-mobile .nav-menu li i {
+        display: none;
+    }
+
+    .footer-mobile .navbar-form {
+        width: 100%;
+        margin: 1rem 0rem;
+        margin-left: 0;
+    }
+
+    .footer-mobile .navbar-form i{
+       display: none;
+       
+    }
+
+    .footer-mobile .navbar-form input{
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    #navbar-movie {
+        display: none;
+    }
+
+    .navbar-header {
+        display: block;
+    }
+
+    .navbar-form input {
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+
+}
+
+
+
+

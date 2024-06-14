@@ -1,0 +1,40 @@
+#movie-details {
+    background-color: #040B0F;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 7rem 0;
+}
+
+/* DETAILS-TOP */
+
+.details-top h3 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    color: #FFD369;
+}
+
+.details-top iframe {
+    width: 100%;
+    height: 80svh;
+    padding: 1rem 4rem;
+}
+
+
+@media (max-width: 767px) {
+    .details-top iframe {
+        height: 40svh;
+        padding: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+

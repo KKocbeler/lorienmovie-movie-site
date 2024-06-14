@@ -1,0 +1,18 @@
+.page-changer {
+    display: block;
+    width: 100%;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+}
+
+.pagination li {
+    padding: .4rem 1rem;
+    border: 1px solid #FFD369;
+    border-radius: .5rem;
+    margin: .2rem;
+}

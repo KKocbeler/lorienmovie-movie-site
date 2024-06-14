@@ -1,0 +1,171 @@
+.card-main {
+    position: relative;
+    border: .1rem solid #FFD369;
+    overflow: hidden;
+}
+
+.card-main img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    display: block;
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    bottom: -100%;
+    max-height: 20vh;
+    z-index: 1;
+    background-color: black; 
+    opacity: .5;
+    transition: transform .4s ease, bottom .4s ease, opacity .4s ease;
+    transform-origin: bottom;
+}
+
+.card-main:hover .card-content {
+    bottom: 0; 
+    opacity: 1; 
+}
+
+.card-content h4,
+.card-content p span,
+.card-content .imdb-point p,
+.card-content .imdb-point div i,
+.card-content .imdb-point span {
+    opacity: 0; 
+    transition: opacity .4s ease; 
+}
+
+.card-main:hover .card-content h4,
+.card-main:hover .card-content p span,
+.card-main:hover .card-content .imdb-point p,
+.card-main:hover .card-content .imdb-point div i,
+.card-main:hover .card-content .imdb-point span {
+    opacity: 1; 
+}
+
+.card-content h4 {
+    font-size: 1.8rem;
+    color: #EEEEEE;
+}
+
+.card-content p span {
+    padding: .2rem;
+    font-size: 1.4rem;
+}
+
+.card-content .imdb-point {
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.card-content .imdb-point p {
+    border: 1px solid #FFD369;
+    border-radius: .4rem;
+    background-color: #FFD369;
+    padding: .4rem .8rem;
+    margin-right: 1rem;
+    color: #050E14;
+}
+
+.card-content .imdb-point div i,
+.card-content .imdb-point span {
+    font-size: 1.4rem;
+    color: #FFD369;
+    padding-left: .3rem;
+}
+
+.special-title {
+    color: #EEEEEE;
+    text-align: center;
+    margin-top: .5rem;
+    font-size: bold;
+}
+
+/* RESPONSİVE */
+
+@media (max-width: 1199px) {
+    .card-main {
+        overflow: auto;
+    }
+
+    .card-content {
+        bottom: 0;
+        opacity: 1;
+    }
+
+    .card-content h4,
+    .card-content p span,
+    .card-content .imdb-point p,
+    .card-content .imdb-point div i,
+    .card-content .imdb-point span {
+        opacity: 1;
+    }
+
+    .special-title {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-main {
+        overflow: auto;
+    }
+
+    .card-content {
+        bottom: 0;
+        opacity: 1;
+        max-height: 40vh;
+    }
+
+    .card-content h4,
+    .card-content p span,
+    .card-content .imdb-point p,
+    .card-content .imdb-point div i,
+    .card-content .imdb-point span {
+        opacity: 1;
+    }
+
+    .card-content h4 {
+        font-size: 3.2rem;
+        margin-bottom: 1rem;
+        letter-spacing: .1rem;
+    }
+
+    .card-content p span {
+        font-size: 2rem;
+    }
+
+    .card-content .imdb-point {
+        margin-top: 1rem;
+    }
+
+    .card-content .imdb-point p,
+    .card-content .imdb-point div i,
+    .card-content .imdb-point span {
+        font-size: 1.8rem;
+    }
+
+
+    .special-title {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-main {
+        height: 60svh;
+        width: 60rem;
+    }
+    .card-main img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card-content {
+        position: absolute;
+        bottom: 0;
+    }
+}

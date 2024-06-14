@@ -1,0 +1,73 @@
+#home-movie-list {
+    margin: 3rem 0 7rem 0;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: #040B0F;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#home-movie-list .movies-title {
+    margin: 2rem;
+}
+
+#home-movie-list .movies-title h2 {
+    font-size: 2.8rem;
+    color:  #DDDDDD;
+    margin-bottom: .8rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#home-movie-list .movies-title hr {
+    color: #FFD369;
+    background-color: #FFD369;
+    border: none;
+    height: .2rem;
+}
+
+.home-card-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.home-card-list .home-card {
+    width: calc(25% - 6rem);
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 1419px) {
+    .home-card-list .home-card  {
+        width: calc(25% - 3rem);
+        margin-bottom: 5rem;
+    }
+    
+}
+
+
+@media (max-width: 1199px) {
+    .home-card-list .home-card  {
+        width: calc(25% - 2rem);
+        margin-bottom: 5rem;
+    }
+    
+}
+
+@media (max-width: 991px) {
+    .home-card-list .home-card  {
+        width: calc(50% - 3rem);
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-card-list .home-card  {
+        width: calc(100% - 2rem);
+        margin-bottom: 5rem;
+    }
+
+    .home-card {
+        display: flex;
+        justify-content: center;
+    }
+}
+

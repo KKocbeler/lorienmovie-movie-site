@@ -1,0 +1,178 @@
+#login-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.wrapper {
+    width: 55rem;
+    height: 60rem;
+    overflow: hidden;
+    border-radius: .7rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+}
+
+.login-acc {
+    background-color: #040B0F;
+    border: 1px solid #FFD369;
+}
+
+.login-acc h2 {
+    color: #C9D6DF;
+}
+
+.btn-login {
+    background-color: #ffd269;
+    padding: 1.4rem;
+    text-align: center;
+    width: 100%;
+}
+
+.login-acc,
+.create-acc {
+    width: 100%;
+    height: 100%;
+    padding: 5rem 6rem;
+    transition: all .3s;
+    border-radius: .7rem;
+}
+
+.create-acc {
+    border: 1px solid #040B0F;
+    background-color: #C9D6DF;
+    transform: translate(55rem, -60rem);
+}
+
+.create-acc h2 {
+    color: #040B0F;
+}
+
+
+/* ACTIVE */
+
+.login-acc.active {
+    transform: translate(-55rem, 0rem);
+}
+
+.create-acc.active {
+    transform: translate(0rem, -60rem);
+    border: 1px solid #FFD369;
+}
+
+.btn-signup {
+    text-align: center;
+    background-color: #040B0F;
+    padding: 1.4rem;
+    color: #C9D6DF;
+    width: 100%;
+}
+
+.already-account {
+    margin: 3rem;
+    text-align: center;
+}
+
+.already-account a {
+    color: #040B0F;
+}
+
+/* ACTIVE */
+
+.wrapper h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+
+}
+
+
+.input-box {
+    position: relative;
+    margin-bottom: 2.4rem;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 1.3rem 3rem 1.3rem 3.2rem;
+    border: none;
+    border-radius: .7rem;
+    outline: none;
+}
+
+.input-box>i {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    font-size: 1.6rem;
+    transform: translateY(-50%);
+
+}
+
+.see-password {
+    width: 3rem;
+}
+
+.see-password i {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    font-size: 1.6rem;
+}
+
+.password-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.password-forgot a,
+.password-forgot label {
+    font-size: 1.4rem;
+}
+
+.login-acc label  {
+    color: #C9D6DF;
+}
+
+.create-acc label {
+    color: #040B0F;
+}
+
+.create-acc label a {
+    text-decoration: underline;
+    color: #040B0F;
+}
+
+.chechbox-password {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.new-account {
+    margin: 3.2rem;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    #login-signup {
+        height: auto;
+        padding: 5rem 0rem;
+    }
+
+    .login-acc,
+    .create-acc {
+    padding: 5rem 4rem;
+    }
+
+    .login-acc {
+       border: none;
+    }
+
+    .create-acc.active {
+        border: none;
+    }
+}

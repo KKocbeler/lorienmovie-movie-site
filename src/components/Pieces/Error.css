@@ -1,0 +1,39 @@
+#error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    gap: 2rem;
+}
+
+#error .error-icon i {
+    font-size: 5rem;
+    color: #FFD369;
+}
+
+.error-message p {
+    font-size: 2rem;
+    color: #FFD369;
+}
+
+.error-back-to-home {
+    margin-top: 2rem;
+}
+
+.error-back-to-home button {
+    padding: 1.2rem 2.4rem;
+    border: none;
+    border-radius: .6rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: background-color ease .4s;
+}
+
+.error-back-to-home button:hover {
+    background-color: #FFD369;
+}
+
+.error-back-to-home button a {
+    color: #040B0F;
+}

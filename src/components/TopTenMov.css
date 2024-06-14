@@ -1,0 +1,15 @@
+#topten-mov {
+    padding: 0rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1419px) {
+
+    #topten-mov {
+        padding: 0rem;
+    }
+
+}
+

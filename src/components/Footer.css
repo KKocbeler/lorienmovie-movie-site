@@ -1,0 +1,136 @@
+footer {
+    margin-top: auto;
+    background-color: #040B0F;
+    width: 100%;
+}
+
+.footer-body .footer-logo,
+.footer-body .footer-icons,
+.footer-body .subscribe {
+    width: 33.3%;
+}
+
+.carousel-img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.footer-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 5rem;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 14rem;
+}
+
+.footer-icons i {
+    padding: 1rem;
+    font-size: 2.8rem;
+    color: #dddddd;
+}
+
+footer .subscribe {
+    color: #dddddd;
+}
+
+footer .subscribe h4 {
+    font-size: 1.8rem;
+    color: #FFD369;
+}
+
+footer .subscribe p {
+    font-size: 1.8rem;
+}
+
+footer .subscribe input, .to-login {
+    padding: 1rem .8rem;
+    font-size: 1.6rem;
+    border-radius: .7rem;
+    border: none;
+    margin: 0 .3rem;
+    outline-color: #FFD369;
+}
+
+.to-login{
+    background-color: #FFD369;
+    color: #040B0F;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: #4267B2;
+    transition: .4s;
+}
+
+.fa-instagram:hover {
+    color: #833AB4;
+    transition: .4s;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+    transition: .4s;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+    transition: .4s;
+}
+
+/* RESPONSİVE  */
+
+@media (max-width: 767px) {
+
+    footer {
+        padding: 0;
+    }
+
+    .footer-body .footer-logo,
+    .footer-body .footer-icons,
+    .footer-body .subscribe {
+        width: auto;
+    }
+
+    .footer-body {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer-logo {
+        order: 1;
+    }
+
+    .footer-icons {
+        order: 3;
+    }
+
+    .subscribe {
+        order: 2;
+        margin-bottom: 3rem;
+    }
+
+    .subscribe p {
+        display: none;
+    }
+
+    .subscribe form input,
+    .to-login {
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        margin-bottom: .5rem;
+        
+    }
+}
+
+

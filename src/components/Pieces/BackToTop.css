@@ -1,0 +1,35 @@
+.visible {
+   visibility: visible;
+   opacity: 1;
+   transition: all .4s;
+
+}
+.invisible {
+   visibility: hidden;
+   opacity: 0;
+   transition: all .1s;
+}
+#back-to-top button {
+    color: #050E14;
+    background-color: #FFD369;
+    width: 100%;
+    padding: 1.3rem;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: .04rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0;
+    margin: 0;
+}
+
+#back-to-top button:hover {
+    background-color: #DDDDDD;
+    transition: all .4s;
+}
+
+#back-to-top button i {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
