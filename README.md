@@ -56,4 +56,4 @@ cd lorien-movie
 npm install
 
 # Start the development server
-npm run dev
+npm run start
